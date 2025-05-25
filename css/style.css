@@ -157,3 +157,166 @@ textarea {
 /*
 * Aquí empieza el proyecto
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;;
+  font-size: 16px;
+  color: #fff;
+  background-color: #515DEF;
+
+}
+.page{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 ;
+  background-image: url("../img/icon-background.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+header {
+  display: flex;
+ 
+  padding: 20px 0;
+  align-items: center;
+  width: 792px;
+  height: 100px;
+}
+header figure {
+  margin: 0;
+}
+header figure img {
+  width: 100px;
+}
+header figcaption {
+  display: none;
+}
+header nav {
+  flex-grow: 1;
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  text-align: center;
+  gap: 32px;
+  justify-content: center;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.button-Contact {
+  justify-content: flex-end; 
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  right: 250px; 
+  top: 20px;
+}
+
+.button-Contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button-Contact li {
+  margin: 0;
+}
+.button-Contact a {
+  display: flex;
+  background-color: #515DEF;
+  color:white;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #515DEF;
+}
+
+.button-Contact:hover {
+  background-color: #515DEF;
+  color: #fff;
+}
+
+content h2 {
+  font-size: 24;
+  margin: 0;
+  color: #fff;
+  font-weight: 300
+}
+content h1 {
+  font-size: 53px;
+  margin: 0;
+  color: #fff;
+  width: 700px;
+
+}
+content p {
+  font-size: 25px;
+  margin: 0;
+  color: #fff;
+  width: 700px;
+  font-weight: 300
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  padding: 10px 20px 10px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.button :hover {
+  background-color: #515DEF;
+  color: #fff;
+}
+
+article {
+  display: flex;
+  background-color: #fff;
+  width: 900px;
+}
+.cards {
+ padding: 30px;
+ gap: 32px;
+}
+article.cards h3 {
+  font-size: 16px;
+  margin: 10px;
+  color: #010101;
+  font-weight: 800;
+}
+article.cards p {
+  font-size: 14px;
+  margin: 10px;
+  color: #010101;
+  font-weight: 300;
+  width: 270px;
+
+}
