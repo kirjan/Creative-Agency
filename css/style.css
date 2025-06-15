@@ -233,7 +233,7 @@ header nav ul li a{
 }
 .button-Contact a {
   display: flex;
-  position:fixed;
+  position:relative;
   background-color: #515DEF;
   color:white;
   font-size: 16px;
