@@ -172,7 +172,7 @@ body{
 .page{
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 ;
+  padding: 10px ;
   background-image: url("../img/icon-background.jpg");
   background-repeat: no-repeat;
   background-position: right;
@@ -233,6 +233,7 @@ header nav ul li a{
 }
 .button-Contact a {
   display: flex;
+  position:fixed;
   background-color: #515DEF;
   color:white;
   font-size: 16px;
@@ -284,8 +285,8 @@ content p {
   font-size: 16px;
   font-weight: 300;
   border-radius: 0;
-  padding: 0 20px 10px;
-  margin: 0 10px 10px 0;
+  padding: 10px 20px 10px;
+  margin: 20px 10px 10px 0;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   
@@ -303,6 +304,7 @@ article {
 .cards {
  padding: 30px;
  gap: 32px;
+ margin:20px 0 0 0 ;
 }
 article.cards h3 {
   font-size: 16px;
