@@ -1,0 +1,320 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+@media only screen and (min-width: 35em) {
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*
+* Aquí empieza el proyecto
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;;
+  font-size: 16px;
+  color: #fff;
+  background-color: #515DEF;
+
+}
+.page{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 ;
+  background-image: url("../img/icon-background.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+header {
+  display: flex;
+ 
+  padding: 20px 0;
+  align-items: center;
+  width: 792px;
+  height: 100px;
+}
+header figure {
+  margin: 0;
+}
+header figure img {
+  width: 100px;
+}
+header figcaption {
+  display: none;
+}
+header nav {
+  flex-grow: 1;
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  text-align: center;
+  gap: 32px;
+  justify-content: center;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.button-Contact {
+  justify-content: flex-end; 
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  right: 250px; 
+  top: 20px;
+}
+
+.button-Contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button-Contact li {
+  margin: 0;
+}
+.button-Contact a {
+  display: flex;
+  background-color: #515DEF;
+  color:white;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #515DEF;
+}
+
+.button-Contact:hover {
+  background-color: #515DEF;
+  color: #fff;
+  padding: 10px;
+
+}
+
+content h2 {
+  font-size: 24;
+  margin: 0;
+  color: #fff;
+  font-weight: 300
+}
+content h1 {
+  font-size: 53px;
+  margin: 0;
+  color: #fff;
+  width: 700px;
+
+}
+content p {
+  font-size: 25px;
+  margin: 0;
+  color: #fff;
+  width: 700px;
+  font-weight: 300
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  padding: 0 20px 10px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.button :hover {
+  background-color: #515DEF;
+  color: #fff;
+}
+
+article {
+  display: flex;
+  background-color: #fff;
+  width: 900px;
+}
+.cards {
+ padding: 30px;
+ gap: 32px;
+}
+article.cards h3 {
+  font-size: 16px;
+  margin: 10px;
+  color: #010101;
+  font-weight: 800;
+}
+article.cards p {
+  font-size: 14px;
+  margin: 10px;
+  color: #010101;
+  font-weight: 300;
+  width: 270px;
+
+}
